@@ -46,7 +46,7 @@ public class Ex_3_17 {
 
 		// Inicializa o array
 		for (int i = 0; i < n; i++) {
-			numeros[i] = rand.nextInt(n);
+			numeros[i] = rand.nextInt(n+1);
 		}
 
 		// Verifica se existe um inteiro repetido
