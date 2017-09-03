@@ -4,14 +4,14 @@
 // What is the running time of this method?
 
 public Node<E> findMiddle() {
-		Node<E> walkHead = header;
-		Node<E> walkTrailer = trailer;
-		while (walkHead.getNext() != walkTrailer.getPrev()) {
-			if (walkHead == walkTrailer.getPrev()) {
-				return walkHead;
-			}
-			walkHead = walkHead.getNext();
-			walkTrailer = walkTrailer.getPrev();
+	Node<E> walkHead = header;
+	Node<E> walkTrailer = trailer;
+	while (walkHead.getNext() != walkTrailer.getPrev()) {
+		if (walkHead == walkTrailer.getPrev()) {
+			return walkHead;
 		}
-		return walkHead.getNext();
+		walkHead = walkHead.getNext();
+		walkTrailer = walkTrailer.getPrev();
+	}
+	return walkHead.getNext();
 }
