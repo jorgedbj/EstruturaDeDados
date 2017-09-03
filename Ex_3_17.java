@@ -38,6 +38,7 @@ public class Ex_3_17 {
 
 		// Verifica se o tamanho do array é ≥ 2
 		do {
+			System.out.print("Digite o valor de n: ");
 			n = scanner.nextInt();
 		} while (n < 2);
 
