@@ -3,11 +3,11 @@
 // Redesign that clause to avoid use of any local variable.
 
 public void addFirst(E e) {
-    if (size == 0) {
-      tail = new Node<>(e, null);
-      tail.setNext(tail);
-    } else {
-      tail.setNext(new Node<>(e, tail.getNext()));
-    }
-    size++;
+	  if (size == 0) {
+		  tail = new Node<>(e, null);
+		  tail.setNext(tail);
+	  } else {
+		  tail.setNext(new Node<>(e, tail.getNext()));
+	  }
+	  size++;
 }
