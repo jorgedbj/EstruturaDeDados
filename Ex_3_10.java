@@ -1,3 +1,6 @@
+// R-3.10 Give an implementation of the size() method for the CircularlyLinkedList class, assuming that
+// we did not maintain size as an instance variable.
+
 public int getSize() {
 	if (tail == null) {
 		return 0;
