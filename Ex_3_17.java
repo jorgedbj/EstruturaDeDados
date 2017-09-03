@@ -56,7 +56,8 @@ public class Ex_3_17 {
 		} else {
 			System.out.println("Nenhum número repetido foi encontrado");
 		}
-
+		
+		// Imprime o array completo (para debug)
 		System.out.println(classeExercicio.toString(numeros));
 	}
 }
