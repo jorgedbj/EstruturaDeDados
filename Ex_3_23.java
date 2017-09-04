@@ -23,7 +23,6 @@ public class MeetGame {
 	}
 
 	public MeetGame (int n) {
-		if (n < 1000) { return; }
 		totalPlayers = n;
 		players = new Player[totalPlayers];
 		for (int i=0; i < totalPlayers; i++) {
