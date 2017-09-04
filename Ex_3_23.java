@@ -23,6 +23,7 @@ public class MeetGame {
 	}
 
 	public MeetGame (int n) {
+		if (n < 1000) { return; }
 		totalPlayers = n;
 		players = new Player[totalPlayers];
 		for (int i=0; i < totalPlayers; i++) {
@@ -73,7 +74,7 @@ public class MeetGame {
 		while(game.winner().size() == 0) {
 			// Executa os meet's
 			for (int i=0; i < game.getTotalPlayers(); i++) {
-				game.meet(i, Math.abs(r.nextInt() % game.getTotalPlayers()));
+				game.meet(i, r.nextInt(game.getTotalPlayers()));
 			}
 		}
 
