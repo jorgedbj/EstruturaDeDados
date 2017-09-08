@@ -3,7 +3,6 @@
 
 public class Ex_3_1 {
 	public static void main (String args[]) {
-		int[] random = new int[5];
 		int next, cur, i;
 		cur = 92;
 		for (i=0; i < 5; i++) {
