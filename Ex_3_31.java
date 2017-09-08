@@ -29,7 +29,7 @@ public class DoublyLinkedListReimplemented<E> {
 		public void setNext(Node<E> n) { next = n; }
 	}
 
-	private Node<E> sentinel;                    // header sentinel
+	private Node<E> sentinel;                    // header and trailer sentinels
 
 	private int size = 0;                      // number of elements in the list
 
