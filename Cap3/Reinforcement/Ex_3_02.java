@@ -3,7 +3,7 @@
 
 import java.util.Random;
 
-public class Ex_3_2 {
+public class Ex_3_02 {
 	int[] valores;
 	int total;
 	
@@ -34,7 +34,7 @@ public class Ex_3_2 {
 	}
 	
 	public static void main (String args[]) {
-		Ex_3_2 objeto = new Ex_3_2();
+		Ex_3_02 objeto = new Ex_3_02();
 		Random rand = new Random();
 		rand.setSeed(System.currentTimeMillis());
 		System.out.println("Array inicial: ");
