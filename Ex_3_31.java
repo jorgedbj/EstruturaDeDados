@@ -117,14 +117,4 @@ public class DoublyLinkedListReimplemented<E> {
 		sb.append(")");
 		return sb.toString();
 	}
-
-	public int getSize() {
-		int sizeList = 0;
-		Node<E> walk = sentinel.getPrev();
-		while (walk != null) {
-			sizeList++;
-			walk = walk.getNext();
-		}
-		return sizeList;
-	}
 }
